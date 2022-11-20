@@ -1,0 +1,22 @@
+.NavBar{
+    background: rgb(47, 47, 47);
+}
+.nav-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-container h3{
+    color: #fff;
+    font-size: 25px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.nav-items a{
+   color: #fff; 
+}
