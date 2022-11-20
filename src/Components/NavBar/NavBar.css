@@ -1,5 +1,9 @@
 .NavBar{
-    background: rgb(47, 47, 47);
+    background: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 .nav-container{
     width: 90%;
@@ -18,5 +22,5 @@
     gap: 4rem;
 }
 .nav-items a{
-   color: #fff; 
+   color: #fff;
 }

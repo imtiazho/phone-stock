@@ -9,7 +9,7 @@ const NavBar = () => {
         <h3>Phone Deal</h3>
 
         <div className="nav-items">
-          <Link to="home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="blog">Blog</Link>
           <Link to="about">About</Link>
 
