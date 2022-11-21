@@ -27,6 +27,7 @@ const Register = () => {
   if (hookUser || googleUser) {
     navigate("/");
   }
+  
   return (
     <div className="login">
       <div className="form-container">

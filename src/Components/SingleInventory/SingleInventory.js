@@ -12,6 +12,25 @@ const SingleInventory = () => {
       .then((data) => setShoe(data));
   }, [id]);
 
+  const addStockHandle = (e) => {
+    e.preventDefault();
+    const newQuantity = shoe.quantity + parseInt(e.target.quantity.value);
+
+    const updatedProduct = {
+      quantity: newQuantity
+    }
+
+    fetch(`http://localhost:5000/shoe/${id}`, {
+      method: "PUT", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedProduct),
+    });
+  };
+
+  // console.log(shoe);
+
   return (
     <div className="singleProduct">
       <div className="lh-s">
@@ -25,9 +44,9 @@ const SingleInventory = () => {
       </div>
 
       <div className="rh-s">
-        <form className="add-form">
+        <form onSubmit={addStockHandle} className="add-form">
           <h2>Add Quantity</h2>
-          <input placeholder="Enter Quantity" type="text" />
+          <input placeholder="Enter Quantity" name="quantity" type="text" />
           <input type="submit" value="Add" />
         </form>
 
