@@ -7,13 +7,15 @@ const TopBanner = () => {
     <div className="topBanner">
       <div className="topbanner-container">
         <h1>
-          The Best Phone Dealer <br /> In Town
+          The Best Shoes Dealer <br /> In Town
         </h1>
 
         <p>
-          Nevertheless, they’re wise words, and by all accounts date to long
-          before most marketing and business luminaries were saying anything of
-          the sort about mobile.
+          Athletic shoes are made for sports such as running, walking, or
+          others. Some athletic shoes are designed with specific features for
+          specific activities, for example, roller skates, ice skates, and
+          climbing shoes all provide additional elements designed for their
+          respective sport.
         </p>
 
         <Link to="/about">Learn More</Link>

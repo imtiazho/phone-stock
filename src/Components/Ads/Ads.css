@@ -1,0 +1,11 @@
+.Ads{
+    width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;   
+}
+.Ads img{
+    border-radius: 10px;
+}
