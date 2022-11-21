@@ -9,6 +9,7 @@ import MyItems from "./Components/MyItems/MyItems";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import SingleInventory from "./Components/SingleInventory/SingleInventory";
 import { Toaster } from 'react-hot-toast';
+import ManageInventory from "./Components/ManageInventory/ManageInventory";
 
 function App() {
   return (
@@ -31,6 +32,14 @@ function App() {
           element={
             <ProtectedRoute>
               <MyItems></MyItems>
+            </ProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path="/manageinventory"
+          element={
+            <ProtectedRoute>
+              <ManageInventory></ManageInventory>
             </ProtectedRoute>
           }
         ></Route>

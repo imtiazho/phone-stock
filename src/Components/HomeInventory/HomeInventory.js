@@ -20,7 +20,7 @@ const HomeInventory = () => {
         ))}
       </div>
 
-      <Link className="manage-inventory" to='/'>Manage Inventory</Link>
+      <Link className="manage-inventory" to='/manageinventory'>Manage Inventory</Link>
     </div>
   );
 };
