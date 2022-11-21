@@ -29,7 +29,23 @@ const SingleInventory = () => {
     });
   };
 
-  // console.log(shoe);
+  const decreaseStockHandle = (e) => {
+    e.preventDefault();
+    const newQuantity = shoe.quantity - 1;
+
+    const updatedProduct = {
+      quantity: newQuantity
+    }
+
+    fetch(`http://localhost:5000/shoeStockDecrease/${id}`, {
+      method: "PUT", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedProduct),
+    });
+  };
+
 
   return (
     <div className="singleProduct">
@@ -51,7 +67,7 @@ const SingleInventory = () => {
         </form>
 
         <div className="deliver-package">
-          <button className="deliver-btn">Deliver One Successfully</button>
+          <button onClick={decreaseStockHandle} className="deliver-btn">Deliver One Successfully</button>
           <p>
             <span>*</span> Click this button to reduce the quantity by one when
             you order a Product
