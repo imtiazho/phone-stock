@@ -10,6 +10,7 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import SingleInventory from "./Components/SingleInventory/SingleInventory";
 import { Toaster } from 'react-hot-toast';
 import ManageInventory from "./Components/ManageInventory/ManageInventory";
+import AddItems from "./Components/AddItems/AddItems";
 
 function App() {
   return (
@@ -40,6 +41,14 @@ function App() {
           element={
             <ProtectedRoute>
               <ManageInventory></ManageInventory>
+            </ProtectedRoute>
+          }
+        ></Route>
+        <Route
+          path="/addNewPro"
+          element={
+            <ProtectedRoute>
+              <AddItems></AddItems>
             </ProtectedRoute>
           }
         ></Route>

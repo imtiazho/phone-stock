@@ -1,0 +1,12 @@
+.add-new-form{
+    margin-top: 6rem;
+}
+.add-new-form h2 {
+  font-weight: 600;
+  margin-top: 3rem;
+}
+.form-container-add {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
