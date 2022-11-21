@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import EachInventoryCard from "../EachInventoryCard/EachInventoryCard";
 import "./HomeInventory.css";
 
@@ -18,6 +19,8 @@ const HomeInventory = () => {
           <EachInventoryCard key={shoe._id} shoe={shoe}></EachInventoryCard>
         ))}
       </div>
+
+      <Link className="manage-inventory" to='/'>Manage Inventory</Link>
     </div>
   );
 };

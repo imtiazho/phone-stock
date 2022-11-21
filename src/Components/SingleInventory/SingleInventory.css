@@ -1,0 +1,47 @@
+.singleProduct{
+    width: 90%;
+    margin:  7rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    color: #fff;
+}
+.lh-s h1{
+    color: #fff;
+}
+.lh-s img{
+    max-width: 60%;
+}
+.rh-s{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+.add-form{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+.rh-s h2{
+    margin: 0;
+}
+.add-form input{
+    padding: 10px;
+}
+.deliver-package p{
+    font-size: 13px;
+    width: 60%;
+}
+.deliver-package p span{
+    color: red;
+}
+.add-form input[type="submit"],
+.deliver-btn{
+    background-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}

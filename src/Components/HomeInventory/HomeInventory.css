@@ -13,3 +13,13 @@
     gap: 2rem;
     justify-items: center;
 }
+.manage-inventory{
+    background-color: #fff;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 25px;
+    justify-content: center;
+    margin: 2rem auto 1rem auto;
+    display: flex;
+    width: 20%;
+}
