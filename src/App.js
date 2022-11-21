@@ -8,6 +8,7 @@ import Register from "./Components/Register/Register";
 import MyItems from "./Components/MyItems/MyItems";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import SingleInventory from "./Components/SingleInventory/SingleInventory";
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         ></Route>
       </Routes>
       <Footer></Footer>
+      <Toaster />
     </div>
   );
 }

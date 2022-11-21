@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { useParams } from "react-router-dom";
 import "./SingleInventory.css";
 
@@ -26,7 +27,9 @@ const SingleInventory = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(updatedProduct),
-    });
+    })
+    .then(res => res.json())
+    .then(data => toast.success('Add New Stock'))
   };
 
   const decreaseStockHandle = (e) => {
@@ -43,7 +46,10 @@ const SingleInventory = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(updatedProduct),
-    });
+    })
+    .then(res => res.json())
+    .then(data => toast.success('Decrease One Please Reload'))
+    
   };
 
 
