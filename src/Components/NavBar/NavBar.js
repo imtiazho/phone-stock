@@ -24,7 +24,7 @@ const NavBar = () => {
           { user &&
             <>
               <Link to="/myItems">My Items</Link>
-              <Link to="/addItems">Add Items</Link>
+              <Link to="/addNewPro">Add Items</Link>
             </>
           }
           {user ? (
